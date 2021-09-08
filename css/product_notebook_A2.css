@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Fresca|Monda:400,700&display=swap');
+
+/*
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*/
+
+body{
+	background-color: #fff;
+	font-family: 'EB Garamond', serif;
+}
+
+h1, h2{
+	font-family: 'Monda', sans-serif;
+}
+
+
+/*
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+
+
+.container{
+	margin: 20px;
+}
+*/
+
+#product_picture img{
+	width: 90%;
+	height: 90%;
+}
+
+#requirements p{
+	margin-left: 20px;
+	text-align: left;
+}
+
+#buy_button_mobile, #buy_button_not_mobile{
+	background-color: #00f4f7;
+	border: 2px solid #000;
+	border-radius: 15px;
+	margin: 20px;
+	margin-top: 20px;
+	font-size: 32px;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	cursor: pointer;	
+}
+
+div.container > section#buy_button_mobile > p, div.container > section#buy_button_not_mobile > p{
+	text-decoration: none;
+	font-color: #000;
+	font-weight: 700;
+}
+
+#product_info p{text-align: justify;}
+
+
+
+/*header(new version)*/
+
+header h1{
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+/*shopping cart(new version)*/
+
+.modal-header, .modal-footer, .modal-body, .modal-dialog{
+	background: rgba(36, 255, 0, 0.8);
+	width:200px;
+}
+
+.modal-content{
+	position: fixed;
+	top:200px;
+	width:200px;
+}
+
+.modal h1{font-size: 22px}
+.modal h2{font-size: 18px}
+
+
+
+/*social media(new version)*/
+
+.fa{
+	float:right; 
+	width:45px;
+    color: white;
+    margin:10px;
+    background-color: #3A6BDC;
+}
+
+.fa-facebook{padding: 0px 7px 0px 7px;}
+
+.search .form-control{
+	width: 300px;
+	margin:10px;
+}
+
+.search{width: 100%;}
+
+header .col-fluid{display: grid;} 
+
+#socialmediabuttons{display: none;}
+
+
+
+/*footer*/
+#footer{
+	background-color: rgba(36,255,0,0.5);
+	border-top: 2px solid #000;
+	margin: 0px;	
+}
+
+
+
+
+
+
+
+
+
+
+/*
+---------------------------
+header(previous version)
+---------------------------
+
+#header{
+	border-bottom: 2px solid #000;
+}
+
+#companyname h1{
+	text-align: center;
+	font-size: 25px;
+}
+
+.shopping_off_canvas h1{font-size: 25px;}
+
+.select a:hover, #socialmedia a:hover{color:#2B96DA;}
+
+.fa{
+	padding: 12px;
+	font-size: 30px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}
+
+.fa:hover{opacity: 0.7;}
+
+.fa-facebook{
+	background: #3B5998;
+	color: white;
+}
+
+.fa-twitter{
+	background: #55ACEE;
+  	color: white;
+ }
+
+.fa-instagram{
+	background: #125688;
+  	color: white;
+}
+
+#shopsearch input[type=text]{
+	padding: 6px;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	border: none;
+	font-size: 17px;
+	width: 100%;
+}
+
+#shopsearch input[type=text]{border: 1px solid #ccc;}
+
+
+
+------------------------------
+nav menu(previous version)
+------------------------------
+
+nav.menu a{
+	text-decoration: none;
+	font-family: "EB Garamond", serif;
+	font-size: 25px;
+	display: block;
+	padding:0 10px;
+	color: black;
+	line-height: 40px;
+	letter-spacing: 4px;
+}
+
+ul{list-style: none;}
+
+.wrapper{
+	height: 100%;
+    width:100%;
+}
+
+nav.menu{
+	width: 200px;
+    position: fixed;
+    top:0;
+    height: auto;
+    margin-right: -100%;
+    padding:15px;
+    transition: margin .3s;
+    right: 0;
+    background-color: none;}
+
+
+.nav-toggle{
+	grid-area: nav-toggle;
+	display: block;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    height: 32px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 99;
+    margin-left: 10px;
+    transition: margin .3s;
+}
+
+.nav-toggle span{
+	position: relative;
+    display:block;
+    top: 0px;
+    height: 2px;
+    width: 35px;
+    background: black;
+    transition: all .3s;
+} 
+.nav-toggle span:nth-child(2) {top:12px;}
+
+.nav-toggle span:nth-child(3) {top:24px;}
+
+input[type=checkbox]{
+	position:fixed;							fixed postion > position
+    right:-9999px;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .nav-toggle{margin-right:120px;}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1){
+	top: 8px;
+    left:-7px;
+    height:4px;
+    transform: scale(0.5) rotate(45deg);
+}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2){display:none;}
+
+input[type=checkbox]:checked ~ .nav-toggle span:nth-child(3){
+	top: 4px;
+    left:-7px;
+    height:4px;
+    transform: scale(0.5) rotate(-45deg);
+}
+
+input[type=checkbox]:checked ~ .menu{margin-right:0px;}
+
+
+
+----------------------------------
+shopping cart(previous version)
+----------------------------------
+
+input[type=checkbox]#shopping_toggle{
+  position: fixed;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ .shopping_off_canvas{
+  margin-right: 0px;
+}
+
+.shopping_off_canvas > .product_name{
+  text-align: right;
+}
+
+.shopping_off_canvas > .total_price{
+  text-align: right;
+  font-weight: bold;
+}
+
+.shopping_off_canvas > p#pay.button, .shopping_off_canvas > p#back.button{
+  width: 100%;
+  height: auto;
+  background-color: #78FF00;
+  margin: 5px;
+  border: 1px solid #000;
+  text-align: center;
+  font-weight: bold;
+}
+
+.shopping_off_canvas > p#pay.button:hover, .shopping_off_canvas > p#back.button:hover{
+  background-color: #58BA00;
+  cursor: pointer;
+}
+
+.shopping_off_canvas > a.back_link:link{
+  text-decoration: none;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767.98px){
+
+	body{font-size: 12px;}
+
+	h1{font-size: 20px;}
+
+	h2{font-size: 16px;}
+
+	.logoimage{height: 100px;}
+
+	#content_not_mobile{display: none;}
+
+	div.container > section#buy_button_mobile.d-block.d-md-none.d-xl-none.d-col-8 > p{
+		padding-top: 20px;
+	}
+
+
+
+	/*header(mobile)(new version)*/
+	#socialmediabuttons{display: none;}
+
+	.navbar{
+		position: fixed;
+		right: 5px;
+		top: 5px;
+	}
+
+
+
+	/*-------header(mobile)(previous version)-----------
+
+	.logoimage{
+		display: block; 
+		width: 100%; 
+		margin-left: auto; 
+		margin-right: auto;
+	}
+
+	#socialmedia{display: none;}
+	
+	---------------------------------------------------*/
+
+
+
+	/*
+	-----------------shopping cart(mobile)(previous version)--------------------
+
+	#shopping_cart{
+    	width: 32px;
+    	height: 32px;
+  	}
+
+  	.shopping_off_canvas{
+    	width: 200px;
+    	position: fixed;
+    	height: 100%;
+    	right: 0;
+    	margin-right: -200px;
+    	font-size: 20px;
+    	background: rgba(36, 255, 0, 0.5);
+    	padding: 10px;
+    	transition: margin 0.3s;
+    	z-index: 100;
+  	}
+
+  	input[type=checkbox]:checked ~ .shopping_off_canvas > p#back.button {
+    	margin-right: -200px;
+  	}
+
+	---------------------------------------------------------------------------*/
+
+
+	/*
+	----footer(mobile)(previous version)---------
+
+	#advertisement, #sitemap{display:none;}
+
+	-------------------------------------------*/
+
+}
+
+
+
+/*tablet*/
+@media screen and (min-width: 768px) and (max-width: 990px){
+	
+	.logoimage{height: 100px;}
+
+	#content_mobile1{display: none;}
+	
+	#content_mobile2{display: none;}
+
+	body{font-size: 18px;}
+
+	h1{font-size: 30px;}
+
+	h2{font-size: 22px;}
+
+	#advertisement{display:none;}
+
+	div.container > section#buy_button_not_mobile > p{
+		margin-top: 20px;
+		font-size: 45px;
+	}
+	
+
+
+	/*header(tablet)(new version)*/
+	#socialmediabuttons{display: none;}
+
+	.navbar{
+		position: fixed;
+		right: 5px;
+		top: 5px;
+	}
+
+
+
+	/*
+	-----------header(tablet)(previous version)--------------
+
+	#header h1{font-size: 35px;}
+
+	.select a, #socialmedia a{margin:5px;}
+
+	#socialmedia{display: block;}
+
+	.logoimage{
+		display: block; 
+		width: 100%; 
+		margin-left: auto; 
+		margin-right: auto;
+	}
+	
+	#shopsearch input[type=text]{
+		width: 100%;
+		height: 20px;
+		margin-right: 100px;
+	}
+	--------------------------------------------------------*/
+
+
+
+	/*
+	-------------Shopping cart(tablet)(previous version)-------------------------
+
+	#shopping_cart{
+    	width: 48px;
+    	height: 48px;
+  	}
+
+  	.shopping_off_canvas{
+    	width: 200px;
+    	position: fixed;
+    	height: 100%;
+    	right: 0;
+    	margin-right: -200px;
+    	font-size: 20px;
+    	background: rgba(36, 255, 0, 0.5);
+    	padding: 10px;
+    	transition: margin 0.3s;
+    	z-index: 100;
+  	}
+
+  	input[type=checkbox]:checked ~ .shopping_off_canvas > p#back.button {
+    	margin-right: -200px;
+  	}
+
+  	----------------------------------------------------------------------------*/		
+
+}
+
+
+
+@media screen and (min-width: 991px) and (max-width: 1199.98px){
+
+	.logoimage{height: 100px;}
+
+	#content_mobile1{display: none;}
+	
+	#content_mobile2{display: none;}
+
+	body{font-size: 18px;}
+
+	h1{font-size: 30px;}
+
+	h2{font-size: 22px;}
+
+	#advertisement{display:none;}
+
+	div.container > section#buy_button_not_mobile > p{
+		margin-top: 20px;
+		font-size: 45px;
+	}
+	
+
+
+	/*header(tablet)(new version)*/
+	#socialmediabuttons{display: none;}
+
+}

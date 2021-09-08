@@ -1,0 +1,112 @@
+/*desktop*/
+@media screen and (min-width: 1200px){
+
+	.nav-link{width: 70px;}
+
+	#socialmediabuttons{display: inline-block;}
+
+	#content_mobile1{display: none;}
+	
+	#content_mobile2{display: none;}
+
+	body{font-size: 20px;}
+
+	h1{font-size: 34px;}
+
+	h2{font-size: 24px;}
+
+	div.container > section#buy_button_not_mobile > p{
+		margin-top: 40px;
+		font-size: 70px;
+	}
+
+
+
+	/*
+	-----------------header(desktop)(previous version)--------------------
+
+	.logoimage{
+		display: block; 
+		width: 100%; 
+		margin-left: auto; 
+		margin-right: auto;
+	}
+
+	#companyname h1{font-size: 40px;}
+
+	#socialmedia{display: block;}
+
+	section#header > div#socialmedia{
+		display: inline-block;
+	}	
+	
+	#shopsearch input[type=text]{
+		width: 100%;
+		height: 20px;
+		margin-right: 100px;
+	}
+
+	--------------------------------------------------------------------*/
+
+
+
+	/*
+	------------------nav menu(desktop)(previous version)-----------------
+
+	.nav-toggle{display:none;} 
+
+	nav.menu{
+		position: relative;
+		margin: 0px;
+		background: none;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: 100%;
+	} 
+
+	nav.menu a{
+		display: inline;
+		flex-direction: row;
+		font-size: 20px;
+		padding: 0 5px 5px 5px;
+		text-align: center;
+		border-left: 2px solid;
+		color:#28447B;
+	}
+
+	ul{text-align: center;}
+
+	.menu a:first-child{border-left:none;}		
+
+	---------------------------------------------------------------------*/
+
+
+	/*
+	------------------shopping cart(desktop)(previous version)-------------
+
+  	#shopping_cart{
+    	width: 48px;
+    	height: 48px;
+  	}
+
+  	.shopping_off_canvas{
+    	width: 300px;
+    	position: fixed;
+    	height: 100%;
+    	right: 0;
+    	margin-right: -300px;
+    	font-size: 20px;
+    	background: rgba(36, 255, 0, 0.5);
+    	padding: 10px;
+    	transition: margin 0.3s;
+    	z-index: 100;
+  	}
+
+  	input[type=checkbox]:checked ~ .shopping_off_canvas > p#back.button{
+    	margin-right: -300px;
+  	}
+
+  	----------------------------------------------------------------------*/
+
+}

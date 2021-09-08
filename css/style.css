@@ -1,0 +1,78 @@
+h1 h2			{font-family: 'Monda', sans-serif;}
+
+
+
+/* header shoppingcart */
+
+.modal-header, .modal-footer, .modal-body, .modal-dialog 	{background: rgba(36, 255, 0, 0.8);
+															width:200px;}
+.modal-content 	{position: fixed;
+				top:200px;
+				width:200px;}
+
+
+.modal h1 		{font-size: 22px}
+
+.modal h2 		{font-size: 18px}
+
+/* header socialmedia */
+
+
+
+.fa 		{
+			float:right; 
+			width:45px;
+     		color: white;
+     		margin:10px;
+     		background-color: #3A6BDC;}
+
+.fa-facebook {padding: 0px 7px 0px 7px;}
+
+.search .form-control {width: 300px;
+						margin:10px;}
+.search 	{width: 100%;
+			}
+
+
+
+header 	.col-fluid  {display: grid;
+					} 
+
+header 	.col-fluid {padding:20px;}
+
+body .col-md-6 		{display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+					padding:20px;
+					margin-top: 40px;} 
+
+
+
+body .col-md-12 	{display: flex;			
+					justify-content: center;} 
+
+h1 h2			{font-family: 'Monda', sans-serif;}
+
+.footercontainer .col-md-4 {background-color: rgba(36,255,0,0.5)}
+
+
+@media screen and (max-width: 991px) {
+	
+	.navbar			{position: fixed;
+					right: 5px;
+					top: 5px;}
+	
+
+	.sitemap 				{display: none;}
+
+			
+
+}
+
+@media screen and (max-width: 1057px) {
+
+	.logoimage 				{height: 100px;}
+
+	.socialmediabuttons 	{display: none;}
+
+}
